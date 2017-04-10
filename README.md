@@ -109,4 +109,5 @@ Number of bytes that each LED takes (will be 3 for RGB and 4 for RGBW)
 
 #### ledBuffer
 
-    Instance of a ws2812 buffer. Documented [here](https://nodemcu.readthedocs.io/en/master/en/modules/ws2812/#ws2812newbuffer)
+Instance of a ws2812 buffer. Documented [here](https://nodemcu.readthedocs.io/en/master/en/modules/ws2812/#ws2812newbuffer)    
+You can use the buffer to create cool animations and also to find out which pixel is set to which color.

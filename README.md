@@ -16,12 +16,14 @@ Both RGB and RGBW!
 ## Set up
  - Connect the data pin of your LED strip to GPIO pin 2.  
  - Make sure your power supply can supply enough current to drive your LED strip properly and reliably.  
- - Make sure your version of the NodeMCU firmware has the ws2812 module!!   
+ - Connect your 5V power supplly to your LED strip.
+ - Make sure your version of the NodeMCU firmware has the ws2812 module!!  
+ - Upload all the lua files to your ESP8266 and include them in your init.lua, either by running dofile(...) on them or by literally pasting the file contents into `init.lua`. 
  - Make sure `ws2812.init()` has been called before calling `newMatrix()`
 
 ## Example 
 
-Turns the LED at x|y position 1|1 and 10|10 white:
+Turns the LEDs at x/y-position 1|1 and 10|10 white:
 
 ``` Lua
 ws2812.init()
